@@ -11,20 +11,8 @@ local ImageLabel = Instance.new("ImageLabel")
 local KickYouSelf = Instance.new("TextButton")
 local NoclipGui = Instance.new("TextButton")
 local RealNoclipGui = Instance.new("TextButton")
-local Clear = Instance.new("TextButton")
-local UICorner_2 = Instance.new("UICorner")
-local CodeText = Instance.new("TextBox")
-local UICorner_3 = Instance.new("UICorner")
-local Execute = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
-local R6 = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
-local Respawn = Instance.new("TextButton")
-local UICorner_6 = Instance.new("UICorner")
-local RemotesFolder = Instance.new("Folder")
-local RemoteFolder = Instance.new("Folder")
 local open = Instance.new("ImageButton")
-local UICorner_7 = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
 
 --Properties:
 
@@ -108,97 +96,6 @@ RealNoclipGui.TextScaled = true
 RealNoclipGui.TextSize = 14.000
 RealNoclipGui.TextWrapped = true
 
-Clear.Name = "Clear"
-Clear.Parent = c00lkids_2
-Clear.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Clear.BorderSizePixel = 0
-Clear.Position = UDim2.new(0.662875414, 0, 0.204777092, 0)
-Clear.Size = UDim2.new(0, 100, 0, 20)
-Clear.Font = Enum.Font.SourceSans
-Clear.Text = "Clear"
-Clear.TextColor3 = Color3.fromRGB(255, 255, 255)
-Clear.TextScaled = true
-Clear.TextSize = 14.000
-Clear.TextWrapped = true
-
-UICorner_2.Parent = Clear
-
-CodeText.Name = "CodeText"
-CodeText.Parent = c00lkids_2
-CodeText.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-CodeText.BorderColor3 = Color3.fromRGB(0, 0, 0)
-CodeText.BorderSizePixel = 0
-CodeText.Position = UDim2.new(0.0823849291, 0, 0.200147212, 0)
-CodeText.Size = UDim2.new(0, 185, 0, 82)
-CodeText.ClearTextOnFocus = false
-CodeText.Font = Enum.Font.SourceSans
-CodeText.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
-CodeText.PlaceholderText = "Print(\"hi\")"
-CodeText.Text = ""
-CodeText.TextColor3 = Color3.fromRGB(255, 255, 255)
-CodeText.TextScaled = true
-CodeText.TextSize = 14.000
-CodeText.TextWrapped = true
-CodeText.TextXAlignment = Enum.TextXAlignment.Left
-CodeText.TextYAlignment = Enum.TextYAlignment.Top
-
-UICorner_3.Parent = CodeText
-
-Execute.Name = "Execute"
-Execute.Parent = c00lkids_2
-Execute.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Execute.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Execute.BorderSizePixel = 0
-Execute.Position = UDim2.new(0.662679374, 0, 0.397689819, 0)
-Execute.Size = UDim2.new(0, 100, 0, 20)
-Execute.Font = Enum.Font.SourceSans
-Execute.Text = "Executor"
-Execute.TextColor3 = Color3.fromRGB(255, 255, 255)
-Execute.TextScaled = true
-Execute.TextSize = 14.000
-Execute.TextWrapped = true
-
-UICorner_4.Parent = Execute
-
-R6.Name = "R6"
-R6.Parent = c00lkids_2
-R6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-R6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-R6.BorderSizePixel = 0
-R6.Position = UDim2.new(0.661553323, 0, 0.620515883, 0)
-R6.Size = UDim2.new(0, 100, 0, 20)
-R6.Font = Enum.Font.SourceSans
-R6.Text = "R6"
-R6.TextColor3 = Color3.fromRGB(255, 255, 255)
-R6.TextScaled = true
-R6.TextSize = 14.000
-R6.TextWrapped = true
-
-UICorner_5.Parent = R6
-
-Respawn.Name = "Respawn"
-Respawn.Parent = c00lkids_2
-Respawn.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Respawn.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Respawn.BorderSizePixel = 0
-Respawn.Position = UDim2.new(0.0827166215, 0, 0.696602881, 0)
-Respawn.Size = UDim2.new(0, 100, 0, 20)
-Respawn.Font = Enum.Font.SourceSans
-Respawn.Text = "Respawn"
-Respawn.TextColor3 = Color3.fromRGB(255, 255, 255)
-Respawn.TextScaled = true
-Respawn.TextSize = 14.000
-Respawn.TextWrapped = true
-
-UICorner_6.Parent = Respawn
-
-RemotesFolder.Name = "RemotesFolder"
-RemotesFolder.Parent = c00lkids_2
-
-RemoteFolder.Name = "RemoteFolder"
-RemoteFolder.Parent = c00lkids_2
-
 open.Name = "open"
 open.Parent = c00lkids
 open.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -208,79 +105,20 @@ open.Position = UDim2.new(0.0996955857, 0, 0.463414639, 0)
 open.Size = UDim2.new(0, 66, 0, 61)
 open.Image = "http://www.roblox.com/asset/?id=12869420933"
 
-UICorner_7.CornerRadius = UDim.new(0, 100)
-UICorner_7.Parent = open
-
--- Module Scripts:
-
-local fake_module_scripts = {}
-
-do -- R6.R6
-	local script = Instance.new('ModuleScript', R6)
-	script.Name = "R6"
-	local function module_script()
-		local R6Converter = {}
-		function R6Converter.load(Plr)
-		Plr = game.Players:WaitForChild(Plr)
-		local FalseChar = script:WaitForChild("DefaultCharacter"):Clone()
-		local PlayersCharacter = game.Players:GetCharacterAppearanceAsync(Plr.UserId):Clone()
-		local FaceID = (Plr.Character:WaitForChild("Head"):FindFirstChild("face") or {Texture = "http://www.roblox.com/asset/?id=144080495"}).Texture
-		local Accessories = {}
-		FalseChar:WaitForChild("Head"):WaitForChild("face").Texture = FaceID
-		FalseChar:SetPrimaryPartCFrame(Plr.Character:WaitForChild("HumanoidRootPart").CFrame)
-		for _,Prt in pairs(PlayersCharacter:GetDescendants()) do
-		if Prt:IsA("Accessory") or Prt:IsA("Hat") or Prt:IsA("BodyColors") or Prt:IsA("CharacterMesh")or Prt:IsA("Pants") or Prt:IsA("Shirt") or Prt:IsA("ShirtGraphic") or Prt:IsA("Tool") then
-		table.insert(Accessories,Prt:Clone())
-		end
-		end
-		
-		for _,Prt in pairs(Plr.Character:GetChildren()) do
-		Prt:Destroy()
-		end
-		for _,Prt in pairs(FalseChar:GetChildren()) do
-		Prt.Parent = Plr.Character
-		end
-		for _,Prt in pairs(Accessories) do
-		Prt.Parent = Plr.Character
-		end
-		
-		
-		end
-		
-		return R6Converter
-		
-	end
-	fake_module_scripts[script] = module_script
-end
-
+UICorner_2.CornerRadius = UDim.new(0, 100)
+UICorner_2.Parent = open
 
 -- Scripts:
 
-local function EWCOM_fake_script() -- c00lkids_2.Draggable 
+local function SSBGZT_fake_script() -- c00lkids_2.Draggable 
 	local script = Instance.new('LocalScript', c00lkids_2)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(EWCOM_fake_script)()
-local function BJVK_fake_script() -- KickYouSelf.MainScript 
+coroutine.wrap(SSBGZT_fake_script)()
+local function VREOOE_fake_script() -- KickYouSelf.MainScript 
 	local script = Instance.new('LocalScript', KickYouSelf)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
 
 	local LocalPlayer = game.Players.LocalPlayer
 	local kickyourself = script.Parent
@@ -289,17 +127,9 @@ local function BJVK_fake_script() -- KickYouSelf.MainScript
 		LocalPlayer:Kick("you choose to kick your self")
 	end)
 end
-coroutine.wrap(BJVK_fake_script)()
-local function IHUQUG_fake_script() -- NoclipGui.MainScript 
+coroutine.wrap(VREOOE_fake_script)()
+local function QLXK_fake_script() -- NoclipGui.MainScript 
 	local script = Instance.new('LocalScript', NoclipGui)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
 
 	local RealNoclipGui = script.Parent.Parent.RealNoclipGui
 	local NoclipGui = script.Parent
@@ -308,32 +138,16 @@ local function IHUQUG_fake_script() -- NoclipGui.MainScript
 		RealNoclipGui.Visible = not RealNoclipGui.Visible
 	end)
 end
-coroutine.wrap(IHUQUG_fake_script)()
-local function XBIXXTA_fake_script() -- RealNoclipGui.Draggable 
+coroutine.wrap(QLXK_fake_script)()
+local function YVYU_fake_script() -- RealNoclipGui.Draggable 
 	local script = Instance.new('LocalScript', RealNoclipGui)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(XBIXXTA_fake_script)()
-local function YFNZJ_fake_script() -- RealNoclipGui.MainScript 
+coroutine.wrap(YVYU_fake_script)()
+local function NGWTFIO_fake_script() -- RealNoclipGui.MainScript 
 	local script = Instance.new('LocalScript', RealNoclipGui)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
 
 	local Players = game:GetService("Players")
 	local RunService = game:GetService("RunService")
@@ -376,160 +190,16 @@ local function YFNZJ_fake_script() -- RealNoclipGui.MainScript
 	end)
 	
 end
-coroutine.wrap(YFNZJ_fake_script)()
-local function JYVWNLX_fake_script() -- Clear.Clear 
-	local script = Instance.new('LocalScript', Clear)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.CodeText.Text = ''
-	end)
-end
-coroutine.wrap(JYVWNLX_fake_script)()
-local function FKTEKF_fake_script() -- R6.LocalScript 
-	local script = Instance.new('LocalScript', R6)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-	script.Parent.MouseButton1Click:Connect(function()
-	script.RemoteEvent:FireServer()
-	end)
-end
-coroutine.wrap(FKTEKF_fake_script)()
-local function OXHMXCB_fake_script() -- nil.Script 
-	local script = Instance.new('Script', nil)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-	script.Parent.RemoteEvent.OnServerEvent:Connect(function(player)
-	require(script.Parent.Parent.R6).load(player.Name)
-	end)
-end
-coroutine.wrap(OXHMXCB_fake_script)()
-local function YJJSEYC_fake_script() -- Respawn.LocalScript 
-	local script = Instance.new('LocalScript', Respawn)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-	script.Parent.MouseButton1Click:connect(function()
-			script.Parent.ServerEvents.Respawn:FireServer()
-		end)
-end
-coroutine.wrap(YJJSEYC_fake_script)()
-local function JAJES_fake_script() -- Respawn.ServerEvents 
-	local script = Instance.new('Script', Respawn)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-	script.Respawn.OnServerEvent:connect(function(plr)
-		plr:LoadCharacter()
-	end)
-end
-coroutine.wrap(JAJES_fake_script)()
-local function CEXIAP_fake_script() -- c00lkids_2.MainScript 
-	local script = Instance.new('LocalScript', c00lkids_2)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-	script.Parent.Draggable = true
-	
-	--Variables
-	local codetextbox = script.Parent.CodeText
-	local execute = script.Parent.Execute
-	local RemotesFolder = script.Parent.RemotesFolder
-	
-	--Main Script
-	execute.MouseButton1Click:Connect(function()
-		RemotesFolder.Excute:FireServer(codetextbox.Text)
-	end)
-end
-coroutine.wrap(CEXIAP_fake_script)()
-local function IPBRZ_fake_script() -- c00lkids_2.MainScript 
-	local script = Instance.new('LocalScript', c00lkids_2)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-	script.Parent.Draggable = true
-	
-	--Variables
-	local codetextbox = script.Parent.CodeText
-	local execute = script.Parent.Execute
-	local RemoteFolder = script.Parent.RemoteFolder
-	
-	--Main Script
-	execute.MouseButton1Click:Connect(function()
-		RemoteFolder.Executor:FireServer(codetextbox.Text)
-	end)
-end
-coroutine.wrap(IPBRZ_fake_script)()
-local function CSFM_fake_script() -- open.Draggable 
+coroutine.wrap(NGWTFIO_fake_script)()
+local function UJMS_fake_script() -- open.Draggable 
 	local script = Instance.new('LocalScript', open)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(CSFM_fake_script)()
-local function AIWZDRR_fake_script() -- open.MainScript 
+coroutine.wrap(UJMS_fake_script)()
+local function UAPB_fake_script() -- open.MainScript 
 	local script = Instance.new('LocalScript', open)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
 
 	local c00lkids = script.Parent.Parent.c00lkids
 	
@@ -537,4 +207,4 @@ local function AIWZDRR_fake_script() -- open.MainScript
 		c00lkids.Visible = not c00lkids.Visible
 	end)
 end
-coroutine.wrap(AIWZDRR_fake_script)()
+coroutine.wrap(UAPB_fake_script)()
